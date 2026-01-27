@@ -1,0 +1,14 @@
+
+# Alias
+
+alias ls="eza --all --group-directories-first --color=always --long --git --icons=always --no-time --no-user --no-permissions"
+alias lst="eza -a --tree --level=4"
+alias home="cd ~/"
+alias c="clear"
+alias y="yazi"
+alias q="exit"
+alias v="nvim"
+alias reseto="source ~/.zshrc"
+alias bye="shutdown now"
+alias dejavu="reboot"
+alias tmux='tmux -f ~/.config/tmux/tmux.conf'
