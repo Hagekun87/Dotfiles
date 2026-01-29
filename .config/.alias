@@ -12,3 +12,5 @@ alias reseto="source ~/.zshrc"
 alias bye="shutdown now"
 alias dejavu="reboot"
 alias tmux='tmux -f ~/.config/tmux/tmux.conf'
+alias pacman_ls='pacman -Qe'
+alias yay_ls='yay -Qem'
