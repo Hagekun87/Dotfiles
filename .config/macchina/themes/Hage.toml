@@ -1,0 +1,41 @@
+# mezora theme - sauce for macchina cli
+
+separator=""
+separator_color="cyan"
+key_color="blue"
+prefer_small_ascii = false
+
+[palette]
+type="Dark"
+visible=true
+glyph=" 󱩡 "
+
+[box]
+title=" HageKun "
+border="double"
+visible=true
+
+[bar]
+glyph="▮ "
+hide_delimiters=true
+visible=false
+
+[randomize]
+key_color=false
+separator_color=false
+
+[custom_ascii]
+color="blue"
+path="~/.config/macchina/themes/metal.txt"
+
+[keys]
+host=""
+distro=""
+packages=""
+terminal=""
+wm=" "
+shell=""
+cpu=""
+gpu=""
+disk_space="󰯉"
+memory=""

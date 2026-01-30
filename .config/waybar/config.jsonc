@@ -22,7 +22,8 @@
   "exec": "uname -r | cut -d'-' -f1",
   "interval": 3600,
   "format": "󰣇 {}",
-  "tooltip-format": "Lauch Terminal\n\nSuper + Return (Enter)"
+  "tooltip-format": "~/.config/waybar/scripts/cuantos_paquetes.sh"
+  // "tooltip-format": "Lauch Terminal\n\nSuper + Return (Enter)"
 },
   "hyprland/workspaces": {
     "on-click": "activate",
