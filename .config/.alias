@@ -1,8 +1,8 @@
 
 # Alias
 
-alias ls="eza --all --group-directories-first --color=always --long --git --icons=always --no-time --no-user --no-permissions"
-alias lst="eza -a --tree --level=4"
+alias ls="eza --all --group-directories-first --color=always --long --git --icons=always --no-time --no-user --no-permissions -1"
+alias lst="eza -a --tree --level=2"
 alias home="cd ~/"
 alias c="clear"
 alias y="yazi"
