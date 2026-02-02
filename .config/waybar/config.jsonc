@@ -22,7 +22,7 @@
   "exec": "uname -r | cut -d'-' -f1",
   "interval": 3600,
   "format": "󰣇 {}",
-  "tooltip-format": "~/.config/waybar/scripts/cuantos_paquetes.sh"
+  // "tooltip-format": "~/.config/waybar/scripts/cuantos_paquetes.sh"
   // "tooltip-format": "Lauch Terminal\n\nSuper + Return (Enter)"
 },
   "hyprland/workspaces": {
@@ -40,7 +40,7 @@
       "8": "8",
       "9": "9",
       "10": "0",
-      "active": "󱩡"
+      "active": ""
     }
   },
   "cpu": {

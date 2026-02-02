@@ -1,6 +1,9 @@
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
+typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
+typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
+
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
@@ -16,7 +19,6 @@ fpath+=(~/.oh-my-zsh/custom/plugins/zsh-completions/src)
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="powerlevel10k/powerlevel10k"
-
 # dirección del archivo alias
 source ~/.config/.alias
 
@@ -128,6 +130,21 @@ source $ZSH/oh-my-zsh.sh
 [[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
 eval "$(zoxide init zsh)"
 
+
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
+
+# ---- Salida visual al iniciar terminal ----
+
+if [[ $- == *i* ]]; then
+  TODAY="$(date +%Y-%m-%d)"
+  MACCHINA_FILE="$HOME/.cache/macchina_last_run"
+
+  if [[ ! -f "$MACCHINA_FILE" ]] || [[ "$(cat "$MACCHINA_FILE")" != "$TODAY" ]]; then
+    echo "$TODAY" > "$MACCHINA_FILE"
+    macchina
+  fi
+
+  task ls
+fi
 

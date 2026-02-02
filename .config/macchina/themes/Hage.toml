@@ -1,4 +1,4 @@
-# mezora theme - sauce for macchina cli
+#  Hage_kun theme - sauce for macchina cli
 
 separator=""
 separator_color="cyan"
@@ -8,11 +8,11 @@ prefer_small_ascii = false
 [palette]
 type="Dark"
 visible=true
-glyph=" 󱩡 "
+glyph=" 󰊠 "
 
 [box]
-title=" HageKun "
-border="double"
+title=" Nostromo "
+border="inset"
 visible=true
 
 [bar]
@@ -26,7 +26,7 @@ separator_color=false
 
 [custom_ascii]
 color="blue"
-path="~/.config/macchina/themes/metal.txt"
+path="~/.config/macchina/themes/logo_arch.txt"
 
 [keys]
 host=""
