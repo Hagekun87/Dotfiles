@@ -8,6 +8,7 @@
   "modules-center": ["clock"],
   "modules-right": [ 
     // "group/tray-expander",
+    "custom/taskwarrior",
     "cpu",
     "memory",
     "pulseaudio",
@@ -40,9 +41,16 @@
       "8": "8",
       "9": "9",
       "10": "0",
-      "active": ""
+      "active": "󱥒"
     }
   },
+
+  "custom/taskwarrior": {
+  "exec": "~/.config/waybar/scripts/task_postit.sh",
+  "interval": 60,
+  "format": "{}"
+  },
+
   "cpu": {
     "interval": 5,
     "format": "󰍛 {usage}%",

@@ -28,6 +28,21 @@ export ZSH_COMPDUMP="${XDG_CACHE_HOME:-$HOME/.cache}/zsh/zcompdump-${SHORT_HOST}
 # Crear la carpeta si no existe
 mkdir -p "$(dirname "$ZSH_COMPDUMP")"
 
+arch_updates() {
+  local cache="$HOME/.cache/arch-updates"
+
+  [[ ! -r "$cache" ]] && echo "🍱 0  🍙 0" && return
+
+  local pac aur
+  read pac aur < "$cache"
+
+  [[ "$pac" != <-> ]] && pac=0
+  [[ "$aur" != <-> ]] && aur=0
+
+  echo "🍱 ${pac}  🍙 ${aur}"
+}
+
+
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
@@ -144,7 +159,4 @@ if [[ $- == *i* ]]; then
     echo "$TODAY" > "$MACCHINA_FILE"
     macchina
   fi
-
-  task ls
 fi
-

@@ -7,7 +7,7 @@ news.version=3.4.2
 
 data.location=~/.local/share/task
 #hooks.location=~/.config/task/hooks
-
+color=on
 # Color theme (uncomment one to use)
 #include light-16.theme
 #include light-256.theme
