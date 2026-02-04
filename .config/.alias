@@ -12,7 +12,14 @@ alias reload="source ~/.zshrc"
 alias bye="shutdown now"
 alias dejavu="reboot"
 alias tmux='tmux -f ~/.config/tmux/tmux.conf'
-alias pacman_ls='pacman -Qe'
-alias yay_ls='yay -Qem'
 alias task='\task'
-alias pacmanu='sudo pacman -Syu'
+
+# Pacman y paru
+alias paru-ls='paru -Qem'
+alias pacman-ls='pacman -Qe'
+
+alias pacman-upgrade='sudo pacman -Syu'
+alias paru-upgrade='paru -Syu'
+
+alias upgrades-ls='echo "== Pacman ==" && checkupdates && echo && echo "== AUR (paru) ==" && paru -Qua'
+alias check_power_script='date -d "@$(cat ~/.cache/arch-updates.timestamp)"'

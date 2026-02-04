@@ -29,8 +29,10 @@ export ZSH_COMPDUMP="${XDG_CACHE_HOME:-$HOME/.cache}/zsh/zcompdump-${SHORT_HOST}
 mkdir -p "$(dirname "$ZSH_COMPDUMP")"
 
 arch_updates() {
+  local script="$HOME/.local/bin/arch-updates"
   local cache="$HOME/.cache/arch-updates"
 
+  [[ -x "$script" ]] && "$script"
   [[ ! -r "$cache" ]] && echo "🍱 0  🍙 0" && return
 
   local pac aur

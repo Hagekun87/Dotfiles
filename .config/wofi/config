@@ -1,0 +1,8 @@
+show=drun,run
+width=20%
+lines=4
+prompt=Search
+matching=fuzzy
+insensitive=true
+term=ghostty
+

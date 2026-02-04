@@ -1,0 +1,36 @@
+window {
+  background-color: rgba(26, 27, 38, 0.75);
+  border-radius: 8px;
+  border: 1px solid #c0caf5;
+  padding: 8px;
+  font-family: "Adwaita Mono";
+  font-size: 12px;
+}
+
+#input {
+  background-color: #24283b;
+  color: #c0caf5;
+  border-radius: 8px 8px 0 0;   
+  padding: 8px 20px 8px 20px;
+  margin: 1px;
+  border: none;
+}
+
+#inner-box {
+  margin: 10px;
+  padding: 10px;
+}
+
+#entry {
+  padding: 8px;
+  border-radius: 8px;
+  color: #c0caf5;
+}
+
+#entry:selected {
+  background-color: #7aa2f7;
+  color: #1a1b26;
+  border-radius: 0px;
+  border: none;
+}
+
