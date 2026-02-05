@@ -1,7 +1,7 @@
 window {
   background-color: rgba(26, 27, 38, 0.75);
   border-radius: 8px;
-  border: 1px solid #c0caf5;
+  border: 1px solid #46A8E6;
   padding: 8px;
   font-family: "Adwaita Mono";
   font-size: 12px;
@@ -28,7 +28,7 @@ window {
 }
 
 #entry:selected {
-  background-color: #7aa2f7;
+  background-color: #5f00ff;
   color: #1a1b26;
   border-radius: 0px;
   border: none;

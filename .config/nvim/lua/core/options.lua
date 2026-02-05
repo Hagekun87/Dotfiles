@@ -14,6 +14,7 @@ vim.o.updatetime = 300
 vim.o.timeoutlen = 200
 vim.o.laststatus = 3
 vim.o.cmdheight = 1
+vim.opt.scrolloff = 999 
 
 -- Opciones relativas a la ventana
 

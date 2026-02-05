@@ -7,5 +7,5 @@ opts = {
     legacy_computing_symbols_support = false,
     smear_insert_mode = true,
     cursor_color = "#5f00ff"
-  },j
+  },
 }
