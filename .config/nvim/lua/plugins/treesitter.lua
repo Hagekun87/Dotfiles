@@ -43,6 +43,7 @@ return {
         "gitignore",
         "query",
         "vimdoc",
+        "jsonc",
         "c",
       },
       incremental_selection = {

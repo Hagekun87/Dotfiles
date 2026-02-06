@@ -9,7 +9,7 @@
   border-radius: 0;
   min-height: 0;
 
-  font-family: "Adwaita Mono", monospace;
+  font-family: "Adwaita Mono", "NotoSansCJK-Black", monospace;
   font-size: 12px;
 }
 
@@ -272,16 +272,16 @@ window.nowplaying-art {
 ===================================================== */
 #clock {
   color: #1793d1;
-  padding: 0 10px 1px 10px;   /* room for underline */
+  padding: 0 10px;   /* room for underline */
   letter-spacing: 0.5px;
-  border-bottom: 2px solid transparent;
+  border-bottom: 0px solid transparent;
   transition: all 0.2s ease;
 }
 
 /* Hover underline */
-#clock:hover {
-  border-bottom-color:  #1793d1;
-}
+/* #clock:hover { */
+  /* border-bottom-color:  #1793d1; */
+/* } */
 
 /* Active (after click / alt format) */
 #clock:active {
