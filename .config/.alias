@@ -8,11 +8,11 @@ alias c="clear"
 alias y="yazi"
 alias q="exit"
 alias v="nvim"
-alias reload="source ~/.zshrc"
-alias bye="shutdown now"
-alias dejavu="reboot"
+alias m="ncmpcpp"
+alias r="source ~/.zshrc"
+alias b="shutdown now"
+alias rb="reboot"
 alias tmux='tmux -f ~/.config/tmux/tmux.conf'
-alias task='\task'
 
 # Pacman y paru
 alias paru-ls='paru -Qem'
@@ -23,3 +23,9 @@ alias paru-upgrade='paru -Syu'
 
 alias upgrades-ls='echo "== Pacman ==" && checkupdates && echo && echo "== AUR (paru) ==" && paru -Qua'
 alias check_power_script='date -d "@$(cat ~/.cache/arch-updates.timestamp)"'
+alias installed-ls='sudo cat /var/log/pacman.log | grep -i "installed"'
+
+alias mpd-status="systemctl --user status mpd"
+alias mpd-start="systemctl --user start mpd"
+alias mpd-stop="systemctl --user stop mpd.socket"
+alias mpd-restart="systemctl --user restart mpd.service"

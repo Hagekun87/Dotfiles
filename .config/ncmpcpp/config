@@ -1,0 +1,26 @@
+mpd_host = ~/.config/mpd/socket   
+
+colors_enabled = yes
+main_window_color = 16 
+header_window_color = 70
+volume_color = 16
+state_line_color = 16
+state_flags_color = cyan
+statusbar_color = 16
+current_item_prefix = "▶ "
+
+progressbar_elapsed_color = 58
+progressbar_color = 61
+progressbar_look = "▄▄"
+
+visualizer_type = "spectrum"
+visualizer_look = "⣷⣿"
+visualizer_data_source = "/home/nostromo/.config/mpd/my_fifo"
+visualizer_output_name = "my_fifo"
+visualizer_in_stereo = "yes"
+visualizer_color = 58
+visualizer_fps = "60"   
+visualizer_spectrum_smooth_look = "yes"
+
+playlist_display_mode = columns
+song_columns_list_format = "(30)[16]{t} (20)[76]{a} (40)[70]{b} (10)[34]{l}"

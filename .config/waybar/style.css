@@ -10,7 +10,7 @@
   min-height: 0;
 
   font-family: "Adwaita Mono", "NotoSansCJK-Black", monospace;
-  font-size: 12px;
+  font-size: 10px;
 }
 
 #waybar {
@@ -105,14 +105,14 @@
   TASKWARRIOR - POST-It
 ===================================================== */
 #custom-taskwarrior {
-  color: #d4a900; /* amarillo post-it */
+  color: #7d8596;
   background: transparent;
   padding: 0 10px;
   font-weight: 600;
 }
 
 #custom-taskwarrior:hover {
-  color: #b38f00;
+  color: #c9d1d9;
 }
 
 /* =====================================================
@@ -159,94 +159,61 @@
    CPU (KERNEL-STYLE)
 ===================================================== */
 #cpu {
-  color: #3FB1A9;
+  color: #7d8596;
   padding: 0 8px;
   border-radius: 6px;
   transition: all 0.2s ease;
 }
 
 #cpu:hover {
-  background-color: rgba(147,197,253,0.12);
-  text-shadow: 0 0 8px rgba(147,197,253,0.8);
+  color: #c9d1d9;
 }
 
 /* =====================================================
    MEMORY (KERNEL-STYLE)
 ===================================================== */
 #memory {
-  color: #3F9BB6;
+  color: #7d8596;
   padding: 0 8px;
   border-radius: 6px;
   transition: all 0.2s ease;
 }
 
 #memory:hover {
-  background-color: rgba(147,197,253,0.12);
-  text-shadow: 0 0 8px rgba(147,197,253,0.8);
-}
-/* =====================================================
-   BATTERY (KERNEL-STYLE)
-===================================================== */
-#battery {
-  color: #86efac;
-}
-
-#battery:hover {
-  background-color: rgba(134,239,172,0.12);
-  text-shadow: 0 0 8px rgba(134,239,172,0.8);
-}
-
-#battery.warning {
-  color: #fde68a;
-}
-
-#battery.warning:hover {
-  background-color: rgba(253,230,138,0.14);
-}
-
-#battery.critical {
-  color: #fb7185;
-}
-
-#battery.critical:hover {
-  background-color: rgba(251,113,133,0.16);
-  text-shadow: 0 0 10px rgba(251,113,133,0.9);
+  color: #c9d1d9;
 }
 
 /* =====================================================
    NETWORK (KERNEL-STYLE)
 ===================================================== */
 #network {
-  color: #5342C3;
+  color: #7d8596;
 }
 
 #network:hover {
-  background-color: rgba(103,232,249,0.12);
-  text-shadow: 0 0 8px rgba(103,232,249,0.8);
+  color: #c9d1d9;
 }
 
 /* =====================================================
    BLUETOOTH (KERNEL-STYLE)
 ===================================================== */
 #bluetooth {
-  color: #4056C0;
+  color: #7d8596;
 }
 
 #bluetooth:hover {
-  background-color: rgba(165,180,252,0.12);
-  text-shadow: 0 0 8px rgba(165,180,252,0.8);
+  color: #c9d1d9;
 }
 
 /* =====================================================
    AUDIO (KERNEL-STYLE)
 ===================================================== */
 #pulseaudio {
-  color: #3F7ABB;
+  color: #7d8596;
 }
 
 #pulseaudio:hover {
-  background-color: rgba(147,197,253,0.12);
-  text-shadow: 0 0 8px rgba(147,197,253,0.8);
+  color: #c9d1d9;
 }
 
 /* =====================================================
@@ -266,7 +233,6 @@ window.nowplaying-art {
   padding: 6px;
 }
 
-
 /* =====================================================
    CLOCK (UNDERLINE STYLE)
 ===================================================== */
@@ -278,26 +244,18 @@ window.nowplaying-art {
   transition: all 0.2s ease;
 }
 
-/* Hover underline */
-/* #clock:hover { */
-  /* border-bottom-color:  #1793d1; */
-/* } */
-
-/* Active (after click / alt format) */
 #clock:active {
   border-bottom-color: #38bdf8; /* Arch cyan */
 }
 
 /* =====================================================
-   APP LAUNCHERS (BRAVE + VS CODE)
+   APP LAUNCHERS BRAVE 
 ===================================================== */
-#custom-brave,
-#custom-code {
+#custom-brave {
   padding: 0 8px;
   margin-right: 4px;
   border-radius: 6px;
   font-size: 13px;
-
   transition: all 0.2s ease;
 }
 
@@ -308,57 +266,7 @@ window.nowplaying-art {
 
 #custom-brave:hover {
   background-color: rgba(249,115,22,0.14);
-  text-shadow: 0 0 8px rgba(249,115,22,0.8);
 }
-
-/* VS Code */
-#custom-code {
-  color: #38bdf8;
-}
-
-#custom-code:hover {
-  background-color: rgba(56,189,248,0.14);
-  text-shadow: 0 0 8px rgba(56,189,248,0.8);
-}
-
-/* =====================================================
-   SCREEN RECORDING
-===================================================== */
-#custom-screenrecording-indicator.active {
-  color: #fb7185;
-  text-shadow: 0 0 10px rgba(251,113,133,0.9);
-}
-
-/* =====================================================
-   VOICE TYPE
-===================================================== */
-#custom-voxtype.recording {
-  color: #f472b6;
-  text-shadow: 0 0 8px rgba(244,114,182,0.8);
-}
-
-/* =====================================================
-   NOW PLAYING (CLASSIC STATUS STYLE)
-===================================================== */
-#custom-nowplaying {
-  color: #c9d1d9;
-  padding: 0 10px;
-  margin-right: 6px;
-
-  font-style: italic;
-  letter-spacing: 0.3px;
-
-  border-bottom: 2px solid transparent;
-  transition: all 0.2s ease;
-}
-
-#custom-nowplaying:hover {
-  color: #38bdf8;
-  border-bottom-color: #38bdf8;
-  text-shadow: 0 0 6px rgba(56,189,248,0.6);
-}
-
-
 /* =====================================================
    TOOLTIP STYLING (GTK SAFE)
 ===================================================== */
