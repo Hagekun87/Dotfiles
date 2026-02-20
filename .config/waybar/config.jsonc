@@ -64,7 +64,7 @@
       "tooltip-format-wifi": "{essid} ({signalStrength}%)\n⇣{bandwidthDownBytes} ⇡{bandwidthUpBytes}",
       "tooltip-format-ethernet": "Wired\n⇣{bandwidthDownBytes} ⇡{bandwidthUpBytes}",
       "interval": 3,
-      "on-click": "ghostty -e nmtui"
+      "on-click": "ghostty -e impala"
     },
 
     "bluetooth": {
@@ -81,7 +81,8 @@
       "format-muted": " Muted",
       "format-icons": { "headphone": "", "default": [ "", "", "" ] },
       "scroll-step": 5,
-      "on-click": "pavucontrol"
+      "on-click": "ghostty -e wiremix",
+      "on-click-right": "pactl set-sink-mute @DEFAULT_SINK@ toggle"
     }
   },
 
